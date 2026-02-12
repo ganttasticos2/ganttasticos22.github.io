@@ -1,7 +1,7 @@
 /* Este archivo debe estar colocado en la carpeta raíz del sitio. */
 
-const VERSION = "1.46"
-const CACHE = "Ganttasticos-v1.44" // Cambié esto para forzar actualización
+const VERSION = "1.01"
+const CACHE = "Ganttasticos-v1.0" // Cambié esto para forzar actualización
 
 const ARCHIVOS = [
   "favicon.ico",
