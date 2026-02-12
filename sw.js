@@ -74,7 +74,7 @@ const ARCHIVOS = [
  "js/lib/resaltaSiEstasEn.js",
  "js/lib/custom/md-app-bar.js",
  "ungap/custom-elements.js",
- "/"
+ "./"
 ]
 
 // Verifica si el código corre dentro de un service worker.
