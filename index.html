@@ -7,7 +7,6 @@
 
  <title>PWA con Lista</title>
 
- <!-- Resumen para los motores de búsqueda. -->
  <meta name="description" content="Ejemplo de PWA con Material Design">
 
  <script type="module" src="js/lib/registraServiceWorker.js"></script>
@@ -15,30 +14,19 @@
  <meta name="viewport" content="width=device-width">
 
  <!-- Soporte iOS PWA -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Ganttasticos">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="default">
+ <meta name="apple-mobile-web-app-title" content="Ganttasticos">
 
-<link rel="apple-touch-icon" href="img/icono2048.png">
+ <link rel="apple-touch-icon" href="img/icono2048.png">
 
-<meta name="theme-color" content="#fffbfe">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
-
- <!-- Color de la barra de navegación de Chrome en dispositivos móviles. -->
  <meta name="theme-color" content="#fffbfe">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
- <!-- Ícono para la página web, que normalmente se pone en la raíz del sitio.
-  Puede ser diferente para cada página. -->
  <link rel="icon" sizes="32x32" href="favicon.ico">
 
- <!-- Configuración de la PWA para Chrome, Edge y Safari.
-  Debe ponerse en todas las páginas. -->
  <link rel="manifest" href="site.webmanifest">
 
- <!-- Permite a los navegadores, que como Safari no soportan el estándar
-  completo de custom elementsm, lo cumplan totalmente. Debe ponerse en todas
-  las páginas. -->
  <script src="ungap/custom-elements.js"></script>
 
  <script type="module" src="js/lib/custom/md-app-bar.js"></script>
@@ -55,9 +43,7 @@
 <body>
 
  <md-app-bar class="centered" adicional="tab">
-
   <h1>PWA con Lista</h1>
-
  </md-app-bar>
 
  <nav-tab-fixed id="tab"></nav-tab-fixed>
@@ -66,109 +52,61 @@
 
   <ul class="md-list">
 
-   <li class="md-one-line">
-    <span class="headline">
-     Ciudad de México
-    </span>
-   </li>
+ <li class="md-one-line avatar">
+  <div class="avatar-box">
+   <img alt="Hector" src="img/HECTOR.png">
+  </div>
+  <span class="headline">
+   Córdova Martínez Hector
+  </span>
+ </li>
 
-   <li class="md-one-line">
-    <span class="headline">
-     Este es la PWA del equipo de Ganttasticos conformado por:
-    <ol>
-      <li>Pozos Fragoso Roberto</li>
-      <li>Salazar Mendieta Jesus Angel</li>
-    </ol></span>
-   </li>
+ <li class="md-one-line avatar">
+  <div class="avatar-box">
+   <img alt="Uriel" src="img/BALTA.png">
+  </div>
+  <span class="headline">
+   Baltazar Hernández Uriel
+  </span>
+ </li>
 
-   <li class="md-one-line icon">
-    <span class="material-symbols-outlined">account_balance</span>
-    <span class="headline">
-     Atenas
-    </span>
-   </li>
+ <li class="md-one-line avatar">
+  <div class="avatar-box">
+   <img alt="Amairani" src="img/ITATI.png">
+  </div>
+  <span class="headline">
+   Morales Loza Amairani Itati
+  </span>
+ </li>
 
-   <li class="md-one-line avatar">
-    <img alt="Avatar de Ana" src="img/pexels-moises-patrício-10961948.jpg">
-    <span class="headline">
-     Ana
-    </span>
-   </li>
+ <li class="md-one-line avatar">
+  <div class="avatar-box">
+   <img alt="Roberto" src="img/ROBER.png">
+  </div>
+  <span class="headline">
+   Pozos Fragoso Roberto
+  </span>
+ </li>
 
-   <li class="md-one-line image">
-    <img alt="Coyote de Neza" src="img/Escultura_de_coyote.jpeg">
-    <span class="headline">
-     Neza
-    </span>
-   </li>
+ <li class="md-one-line avatar">
+  <div class="avatar-box">
+   <img alt="Vanessa" src="img/Vanne.png">
+  </div>
+  <span class="headline">
+   Ramirez Gonzales Vanessa Wendolyn
+  </span>
+ </li>
 
-   <li class="md-one-line video">
-    <img alt="Ciudad de San Francisco"
-      src="img/pexels-craig-dennis-3701822.jpg">
-    <span class="headline">
-     San Francisco
-    </span>
-   </li>
+ <li class="md-one-line avatar">
+  <div class="avatar-box">
+   <img alt="Jesús Ángel" src="img/MENDIETA.png">
+  </div>
+  <span class="headline">
+   Salazar Mendieta Jesús Ángel
+  </span>
+ </li>
 
-   <li class="md-one-line video">
-    <img alt="Ciudad de San Francisco"
-      src="img/pexels-craig-dennis-3701822.jpg">
-    <span class="headline">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Laboriosam eaque unde voluptates tempore ad suscipit libero, saepe neque
-     illo amet, eos ea similique quia, maiores tenetur modi nobis expedita
-    </span>
-   </li>
-
-   <li>
-    <a class="md-one-line image" target="_blank" rel="noopener noreferrer"
-      href="https://culturacolectiva.com/historia/ciudad-neza-su-historia-en-fotografias/">
-     <img alt="Coyote de Neza" src="img/Escultura_de_coyote.jpeg">
-     <span class="headline">
-      Neza Link
-     </span>
-    </a>
-   </li>
-
-  </ul>
-
-  <footer>
-   <ul>
-    <li>
-     <p>
-      <small>
-       <a target="_blank" rel="noopener noreferrer"
-         href="https://www.pexels.com/es-es/foto/nina-mono-cara-sonriente-10961948/">
-        La foto de la niña es de Moises Patrício, publicada en el sitio Pexels.
-        Haz clic en este hipervínculo para más información.
-       </a>
-      </small>
-     </p>
-    </li>
-    <li>
-     <p>
-      <small>
-       <a target="_blank" rel="noopener noreferrer"
-         href="https://www.pinterest.com.mx/ludresi/">
-        La foto del Coyote de Neza es de Ludres Isan, publicada en el sitio
-        Pinterest. Haz clic en este hipervínculo para más información.
-       </a>
-      </small>
-     </p>
-    </li>
-    <li>
-     <p>
-      <small>
-       <a target="_blank" rel="noopener noreferrer"
-         href="https://www.pexels.com/es-es/foto/puente-golden-gate-san-francisco-california-3701822/">
-        La foto del puente de San Francisco es de Craig Dennis, publicada en el
-        sitio Pexels. Haz clic en este hipervínculo para más información.
-       </a>
-      </small>
-     </p>
-    </li>
-   </ul>
-  </footer>
+</ul>
 
  </section>
 
