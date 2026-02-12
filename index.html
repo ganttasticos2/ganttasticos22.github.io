@@ -1,129 +1,166 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Ganttásticos </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#020617">
+<html lang="es" class="light dark">
 
-  <link rel="icon" href="img/LOGO.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="css/estilos.css">
+<head>
+
+ <meta charset="UTF-8">
+
+ <title>PWA con Lista</title>
+
+ <!-- Resumen para los motores de búsqueda. -->
+ <meta name="description" content="Ejemplo de PWA con Material Design">
+
+ <script type="module" src="js/lib/registraServiceWorker.js"></script>
+
+ <meta name="viewport" content="width=device-width">
+
+ <!-- Color de la barra de navegación de Chrome en dispositivos móviles. -->
+ <meta name="theme-color" content="#fffbfe">
+
+ <!-- Ícono para la página web, que normalmente se pone en la raíz del sitio.
+  Puede ser diferente para cada página. -->
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+
+ <!-- Configuración de la PWA para Chrome, Edge y Safari.
+  Debe ponerse en todas las páginas. -->
+ <link rel="manifest" href="site.webmanifest">
+
+ <!-- Permite a los navegadores, que como Safari no soportan el estándar
+  completo de custom elementsm, lo cumplan totalmente. Debe ponerse en todas
+  las páginas. -->
+ <script src="ungap/custom-elements.js"></script>
+
+ <script type="module" src="js/lib/custom/md-app-bar.js"></script>
+ <script type="module" src="js/nav-tab-fixed.js"></script>
+
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_pestanas.css">
+ <link rel="stylesheet" href="css/md-tab.css">
+ <link rel="stylesheet" href="css/material-symbols-outlined.css">
+ <link rel="stylesheet" href="css/md-list.css">
+
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="nav-left">
-      <img src="img/LOGO.png" alt="Logo del equipo" class="nav-logo">
-      <span class="nav-title">GANTTÁSTICOS</span>
-    </div>
+ <md-app-bar class="centered" adicional="tab">
 
-    <nav class="nav-right">
-      <ul class="nav-menu">
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#equipo">Equipo</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-<div class="nav-search">
-  <input type="text" id="buscar-info" name="buscar-info" placeholder="Buscar...">
-  <button type="button">🔍</button>
-</div>
+  <h1>PWA con Lista</h1>
 
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
+ </md-app-bar>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <p>Equipo de Desarrollo · PWA</p>
-      <a href="#equipo" class="btn-primary">Conoce al Equipo</a>
-    </div>
-    <img src="img/oficina.png" alt="Hero Image" class="hero-img">
-  </section>
+ <nav-tab-fixed id="tab"></nav-tab-fixed>
 
-  <!-- EQUIPO -->
-  <main class="equipo" id="equipo">
-    <h2>Integrantes del Equipo</h2>
+ <section>
 
-    <section class="grid">
-      <div class="integrante">
-        <div class="foto"><img src="img/Vanne.png" alt="Vanessa"></div>
-        <div class="datos"><h3>Ramirez Gonzalez Vanessa</h3><span>Matrícula: 251271012</span></div>
-      </div>
-      <div class="integrante">
-        <div class="foto"><img src="img/HECTOR.png" alt="Hector"></div>
-        <div class="datos"><h3>Cordova Martinez Hector</h3><span>Matrícula: 251271035</span></div>
-      </div>
-      <div class="integrante">
-        <div class="foto"><img src="img/BALTA.png" alt="Uriel"></div>
-        <div class="datos"><h3>Baltazar Hernández Uriel</h3><span>Matrícula: 251271036</span></div>
-      </div>
-      <div class="integrante">
-        <div class="foto"><img src="img/ROBER.png" alt="Roberto"></div>
-        <div class="datos"><h3>Pozos Fragoso Roberto</h3><span>Matrícula: 251271011</span></div>
-      </div>
-      <div class="integrante">
-        <div class="foto"><img src="img/MENDIETA.png" alt="Jesus"></div>
-        <div class="datos"><h3>Salazar Mendieta Jesus Angel</h3><span>Matrícula: 251271014</span></div>
-      </div>
-      <div class="integrante">
-        <div class="foto"><img src="img/ITATI.png" alt="Itati"></div>
-        <div class="datos"><h3>Morales Loza Amairani Itati</h3><span>Matrícula: 251271008</span></div>
-      </div>
-    </section>
-  </main>
+  <ul class="md-list">
 
-  <!-- PROYECTOS -->
-  <section class="proyectos" id="proyectos">
-    <h2>Proyectos Destacados</h2>
-    <div class="grid-proyectos">
-      <div class="proyecto-card">
-        <img src="img/sync.png" alt="Proyecto 1">
-        <h3>MEDISYNC</h3>
-        <p>Aplicación web para el manejo de consultas medicas con IA integrada.</p>
-      </div>
-      <div class="proyecto-card">
-        <img src="img/gyn.png" alt="Proyecto 2">
-        <h3>EXCALIBUR GYM</h3>
-        <p>Aplicacion web de un gimnasio que ofrece servicios y productos.</p>
-      </div>
-      <div class="proyecto-card">
-        <img src="img/PSICO.png" alt="Proyecto 3">
-        <h3>MINDSPHERE</h3>
-        <p>Aplicación web de psiclogos para consultas.</p>
-      </div>
-    </div>
-  </section>
+   <li class="md-one-line">
+    <span class="headline">
+     Ciudad de México
+    </span>
+   </li>
 
-  <!-- HABILIDADES -->
-  <section class="habilidades" id="habilidades">
-    <h2>Nuestras Habilidades</h2>
-    <div class="grid-habilidades">
-      <div class="habilidad"><img src="img/web.png" alt="Desarrollo"><h3>Desarrollo Web</h3></div>
-      <div class="habilidad"><img src="img/pwa.png" alt="PWA"><h3>PWA & Apps</h3></div>
-      <div class="habilidad"><img src="img/iu.png" alt="UI/UX"><h3>Diseño UI/UX</h3></div>
-      <div class="habilidad"><img src="img/analisis.png" alt="Analítica"><h3>Analítica de Datos</h3></div>
-    </div>
-  </section>
+   <li class="md-one-line">
+    <span class="headline">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Laboriosam eaque unde voluptates tempore ad suscipit libero, saepe neque
+     illo amet, eos ea similique quia, maiores tenetur modi nobis expedita
+     alias!
+    </span>
+   </li>
 
-  <!-- FOOTER -->
-  <footer class="footer" id="contacto">
-    <div class="footer-grid">
-      <div><h3>Ganttásticos</h3><p>© 2026 · Equipo de Desarrollo PWA</p></div>
-      <div><h3>Contacto</h3><p>Email: gantasticosdos@gmail.com</p><p>Tel: +52 55 1234 5678</p></div>
-      <div><h3>Síguenos</h3><p>Facebook | Instagram | TikTok</p></div>
-    </div>
+   <li class="md-one-line icon">
+    <span class="material-symbols-outlined">account_balance</span>
+    <span class="headline">
+     Atenas
+    </span>
+   </li>
+
+   <li class="md-one-line avatar">
+    <img alt="Avatar de Ana" src="img/pexels-moises-patrício-10961948.jpg">
+    <span class="headline">
+     Ana
+    </span>
+   </li>
+
+   <li class="md-one-line image">
+    <img alt="Coyote de Neza" src="img/Escultura_de_coyote.jpeg">
+    <span class="headline">
+     Neza
+    </span>
+   </li>
+
+   <li class="md-one-line video">
+    <img alt="Ciudad de San Francisco"
+      src="img/pexels-craig-dennis-3701822.jpg">
+    <span class="headline">
+     San Francisco
+    </span>
+   </li>
+
+   <li class="md-one-line video">
+    <img alt="Ciudad de San Francisco"
+      src="img/pexels-craig-dennis-3701822.jpg">
+    <span class="headline">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Laboriosam eaque unde voluptates tempore ad suscipit libero, saepe neque
+     illo amet, eos ea similique quia, maiores tenetur modi nobis expedita
+    </span>
+   </li>
+
+   <li>
+    <a class="md-one-line image" target="_blank" rel="noopener noreferrer"
+      href="https://culturacolectiva.com/historia/ciudad-neza-su-historia-en-fotografias/">
+     <img alt="Coyote de Neza" src="img/Escultura_de_coyote.jpeg">
+     <span class="headline">
+      Neza Link
+     </span>
+    </a>
+   </li>
+
+  </ul>
+
+  <footer>
+   <ul>
+    <li>
+     <p>
+      <small>
+       <a target="_blank" rel="noopener noreferrer"
+         href="https://www.pexels.com/es-es/foto/nina-mono-cara-sonriente-10961948/">
+        La foto de la niña es de Moises Patrício, publicada en el sitio Pexels.
+        Haz clic en este hipervínculo para más información.
+       </a>
+      </small>
+     </p>
+    </li>
+    <li>
+     <p>
+      <small>
+       <a target="_blank" rel="noopener noreferrer"
+         href="https://www.pinterest.com.mx/ludresi/">
+        La foto del Coyote de Neza es de Ludres Isan, publicada en el sitio
+        Pinterest. Haz clic en este hipervínculo para más información.
+       </a>
+      </small>
+     </p>
+    </li>
+    <li>
+     <p>
+      <small>
+       <a target="_blank" rel="noopener noreferrer"
+         href="https://www.pexels.com/es-es/foto/puente-golden-gate-san-francisco-california-3701822/">
+        La foto del puente de San Francisco es de Craig Dennis, publicada en el
+        sitio Pexels. Haz clic en este hipervínculo para más información.
+       </a>
+      </small>
+     </p>
+    </li>
+   </ul>
   </footer>
 
-  <!-- JS externo -->
-  <script src="js/lib/registraServiceWorker.js"></script>
+ </section>
+
 </body>
+
 </html>
