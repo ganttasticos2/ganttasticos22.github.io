@@ -1,6 +1,6 @@
 {
  "short_name": "Lista PWA",
- "name": "Ganttasticos PWA",
+ "name": "Ganttasticos",
  "id": "/index.html",
  "start_url": "/index.html",
  "display": "standalone",
@@ -13,7 +13,7 @@
  "screenshots": [
   {
    "src": "/img/screenshot_horizontal.png",
-   "sizes": "639x389",
+   "sizes": "1257x646",
    "type": "image/png",
    "form_factor": "wide",
    "label": "PWA con Material Design"
@@ -71,7 +71,7 @@
   },
   {
    "src": "/img/maskable_icon.png",
-   "sizes": "2049x2049",
+   "sizes": "3413x3413",
    "type": "image/png",
    "purpose": "any"
   },
