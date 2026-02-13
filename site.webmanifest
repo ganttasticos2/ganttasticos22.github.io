@@ -1,8 +1,8 @@
 {
  "short_name": "Lista PWA",
  "name": "Ganttasticos",
- "id": ".",
- "start_url": ".",
+ "id": "/",
+ "start_url": "/",
  "display": "standalone",
  "theme_color": "#fffbfe",
  "background_color": "#fffbfe",
